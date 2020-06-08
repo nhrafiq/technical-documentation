@@ -1,0 +1,114 @@
+body, html {
+    height: 100%;
+}
+
+/* Set up grid areas */
+
+nav {
+    grid-area: navbar;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+body {
+    margin: 0;
+    width: auto;
+    display: grid; 
+    grid-template-areas: 
+        'navbar main'
+        'navbar footer';
+    grid-template-columns: 215px auto;
+    grid-column-gap: 0;
+    font: 15px 'Roboto', sans-serif;
+    background-color: #ede6e3;
+}
+
+/* Scrollbar - source: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #dadad9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f06449;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ca553e;
+}
+
+/* Content */
+
+header {
+    font: bold 16px 'Lora', serif;
+    letter-spacing: 0.5px;
+    padding-top: 10px;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #dadad9;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+}
+
+nav a:hover {
+    letter-spacing: 1px;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+main {
+    padding: 20px;
+}
+
+.main-section {
+    border-bottom: 2px dotted #36382e;
+}
+
+pre {
+    background-color: #dadad9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 20px;
+    font-style: italic;
+}
+
+/* Media query */
+@media (max-width: 700px) {
+    body {
+        grid-template-areas: 
+            'navbar'
+            'main'
+            'footer';
+        grid-template-columns: auto;
+    }
+
+    nav {
+        min-height: 50px;
+    }
+
+    main {
+        margin-top: 30px;
+    }
+}

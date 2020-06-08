@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <header>Introduction to Java</header>
+            <a href="#What_is_Java?" class="nav-link">What is Java?</a>
+            <a href="#Hello_World" class="nav-link">Hello World</a>
+            <a href="#Basic_Syntax" class="nav-link">Basic Syntax</a>
+            <a href="#Comments" class="nav-link">Comments</a>
+            <a href="#Variables" class="nav-link">Variables</a>
+        </nav>
+
+        <main id="main-doc">
+            <section class="main-section" id="What_is_Java?">
+                <header>What is Java?</header>
+                <article>
+                <p>Java was created in 1995 and is owned by Oracle. It is used for </p>
+                <ul>
+                    <li>Mobile, desktop, and web apps</li>
+                    <li>Web servers</li>
+                    <li>Games</li>
+                    <li>Database connections</li>
+                </ul>
+
+                <p>Java is useful because:</p>
+                <ul>
+                    <li>It works on different operating systems</li>
+                    <li>It is easy to learn</li>
+                    <li>It is popular</li>
+                </ul>
+                </article>
+            </section>
+
+            <section class="main-section" id="Hello_World">
+                <header>Hello World</header>
+                <article>
+                <p>All Java applications start with a class name, which matches the file name.</p>
+                <p>Here is a basic Java file:</p>
+                <pre><code>public class MyClass {
+    public static void main(String[] args) {
+        System.out.println("Hello World"); 
+    } 
+}</code></pre>
+
+                <p>You can run a Java file from the command line:</p>
+                <pre><code>javac MyClass.java 
+java MyClass</code></pre>
+                </article>
+            </section>
+
+            <section class="main-section" id="Basic_Syntax">
+                <header>Basic Syntax</header>
+                <article>
+                <p>Java is case-sensitive. The class name must match the name of the file itself.</p>
+
+                <p>Moreover, each program needs a main method, which looks like this:</p>
+                <pre><code>public static void main(String[] args)</code></pre>
+
+                <p>Every statement will end with a semicolon.</p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Comments">
+                <header>Comments</header>
+                <article>
+                <p>Comments are used to make code more readable, and are important to ensure that 
+                    code is maintainable. Java supports two kinds of comments: single-line and multi-line. 
+                    The single-line comment looks like this:
+                </p>
+
+
+                <pre><code>// This line will not execute
+System.out.println("This line will execute.");</code></pre>
+
+                <p>Multi-line comments look like these: </p>
+
+                <pre><code>/* This line will not execute, 
+and neither will this one! */ 
+System.out.println("This line will execute.");</code></pre>
+                </article>
+            </section>
+
+            <section class="main-section" id="Variables">
+                <header>Variables</header>
+                <article>
+                <p>Java has multiple types of variables, which store different values of data.
+                    Some of these include:
+                </p>
+
+                <ul>
+                    <li>String</li>
+                    <li>int</li>
+                    <li>float</li>
+                    <li>char</li>
+                    <li>boolean</li>
+                </ul>
+
+                <p>Java variables can be declared by specifying their types and values:</p>
+                <pre><code>type variable = value;</code></pre>
+
+                <p>Adding the final keyword will ensure that the value of this variable won't change:</p>
+                <pre><code>final int num = 15;</code></pre>
+                </article>
+            </section>
+        </main>
+
+        
+
+        <footer>Content from w3schools.com</footer>
+
+        
+        <!-- 
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        -->
+       
+    </body>
+</html>
